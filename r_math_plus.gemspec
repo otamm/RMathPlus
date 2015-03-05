@@ -4,12 +4,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rmathplus/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "rmathplus"
-  spec.version       = Rmathplus::VERSION
-  spec.authors       = ["otamm"]
+  spec.name          = "r_math_plus"
+  spec.version       = RMathPlus::VERSION
+  spec.authors       = ["Otávio Monteagudo"]
   spec.email         = ["oivatom@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{ Math operations to use in puzzles. }
+  spec.description   = %q{ Some extra math ops to the standard library which include prime number operations and the least common multiple of an array of numbers. }
   spec.homepage      = ""
   spec.license       = "MIT"
 
