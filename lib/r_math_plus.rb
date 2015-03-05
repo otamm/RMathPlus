@@ -26,11 +26,9 @@ module RMathPlus
   def self.prime_array(n) #returns an array with all primes less than number n.
     if n < 2
       return []
-    elsif n == 2
-      return [2]
     else
-      prime_array = [2]
-      for i in (3..n)
+      prime_array = []
+      for i in (2..n)
         prime_array.push(i) if RMathPlus.is_prime?(i,prime_array) # the own prime_array built so far is passed as an argument in order to improve processing speed.
       end
     end
