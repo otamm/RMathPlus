@@ -79,7 +79,7 @@ module RMathPlus
           lcm_factors[factor] = factors.count(factor)
         end
       end
-    end
+    end 
 
     lcm = 1
     lcm_factors.each { |factor,max_quantity| lcm *= factor ** max_quantity }
