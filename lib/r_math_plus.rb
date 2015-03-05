@@ -37,7 +37,7 @@ module RMathPlus
     return prime_array
   end
 
-  def self.prime_factors(n,biggest_number_prime_array=false) #returns the prime factors of a given number. if n is prime, returns n. second parameter to improve speed if method would be utilized in a range of numbers.
+  def self.prime_factors(number, biggest_number_prime_array=false) #returns the prime factors of a given number. if n is prime, returns n. second parameter to improve speed if method would be utilized in a range of numbers.
     factors = []
     if biggest_number_prime_array
       primes = biggest_number_prime_array
@@ -48,9 +48,9 @@ module RMathPlus
     while true
       signal = factors.size #signalizes when to break the loop.
       primes.each do |prime|
-        if (n % prime) == 0
+        if (number % prime) == 0
           factors.push(prime)
-          n = n / prime
+          number = number / prime
           break
         end
       end
@@ -79,7 +79,7 @@ module RMathPlus
           lcm_factors[factor] = factors.count(factor)
         end
       end
-    end 
+    end
 
     lcm = 1
     lcm_factors.each { |factor,max_quantity| lcm *= factor ** max_quantity }
