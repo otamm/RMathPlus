@@ -1,7 +1,7 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rmathplus/version'
+require 'r_math_plus/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "r_math_plus"
@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["oivatom@gmail.com"]
   spec.summary       = %q{ Math operations to use in puzzles. }
   spec.description   = %q{ Some extra math ops to the standard library which include prime number operations and the least common multiple of an array of numbers. }
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/otamm/RMathPlus"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -20,4 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rspec", "~> 3.0.0"
 end

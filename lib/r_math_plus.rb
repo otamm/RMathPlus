@@ -42,7 +42,7 @@ module RMathPlus
     if biggest_number_prime_array
       primes = biggest_number_prime_array
     else
-      primes = RMathPlus.prime_array(n)
+      primes = RMathPlus.prime_array(number)
     end
 
     while true
@@ -55,7 +55,7 @@ module RMathPlus
         end
       end
       if signal == factors.size
-        factors.push(n)
+        factors.push(number)
         break
       end
     end
@@ -87,3 +87,10 @@ module RMathPlus
   end
 
 end
+
+odds = []
+for i in (1..99)
+  odds.push(i) if (i % 2) == 1
+end
+
+puts RMathPlus.lcm(odds)
