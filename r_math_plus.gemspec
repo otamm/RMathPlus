@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Otávio Monteagudo"]
   spec.email         = ["oivatom@gmail.com"]
   spec.summary       = %q{ Math operations to use in puzzles. }
-  spec.description   = %q{ Some extra math ops to the standard library which include prime number operations and the least common multiple of an array of numbers. }
+  spec.description   = %q{ Some extra math ops to the standard library which include prime number operations and the least common multiple of an array of numbers. See the Documentation link below for further details.}
   spec.homepage      = "https://github.com/otamm/RMathPlus"
   spec.license       = "MIT"
 

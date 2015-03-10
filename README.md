@@ -43,6 +43,11 @@ The '.prime_array' method takes an integer as a parameter and returns an array w
 RMathPlus.prime_array(10) # => [2,3,5,7]
 ```
 
+'.nth_prime' returns the first 'n' primes passed as a parameter to the method:
+```ruby
+RMathPlus.nth_prime(3) # => [2,3,5]
+```
+
 '.prime_factors' returns an array of the prime factors of a given number n. If n is a prime, it will return n.
 Ex:
 ```ruby
