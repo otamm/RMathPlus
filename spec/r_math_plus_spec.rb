@@ -51,6 +51,10 @@ describe RMathPlus do
     it "returns first prime if n == 1" do
       expect(RMathPlus.nth_prime(1)).to eq [2]
     end
+
+    it "returns the primes in correct order" do
+      expect(RMathPlus.nth_prime(100)[-1]).to eq 541
+    end
   end
 
   describe ".prime_factors" do
