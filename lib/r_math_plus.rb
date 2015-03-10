@@ -35,6 +35,29 @@ module RMathPlus
     return prime_array
   end
 
+  def self.nth_prime(n) #returns an array with all primes less than number n.
+    if n <= 1
+      if n == 1
+        return [2]
+      end
+      if n < 1
+        raise "Wops, there's no 0th prime!"
+      end
+    end
+    prime_array = [2]
+    i = 2
+    array_size = 1 # compares faster than running prime_array.size on each loop
+    while true
+      i += 1
+      if RMathPlus.is_prime?(i,prime_array) # the own prime_array built so far is passed as an argument in order to improve processing speed.
+        prime_array.push(i)
+        array_size += 1
+        break if array_size == n
+      end
+    end
+    return prime_array
+  end
+
   def self.prime_factors(number, biggest_number_prime_array=false) #returns the prime factors of a given number. if n is prime, returns n. second parameter to improve speed if method would be utilized in a range of numbers.
     factors = []
     if biggest_number_prime_array

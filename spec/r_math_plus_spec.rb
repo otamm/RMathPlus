@@ -42,6 +42,17 @@ describe RMathPlus do
 
   end
 
+  describe ".nth_prime" do
+
+    it "returns an array with the first n primes" do
+      expect(RMathPlus.nth_prime(3)).to eq [2,3,5]
+    end
+
+    it "returns first prime if n == 1" do
+      expect(RMathPlus.nth_prime(1)).to eq [2]
+    end
+  end
+
   describe ".prime_factors" do
 
     it "returns repeated prime factors of a given number" do
