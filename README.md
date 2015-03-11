@@ -1,3 +1,4 @@
+[![Gem Version](https://badge.fury.io/rb/glasses.svg)](http://badge.fury.io/rb/glasses) 
 # Rmathplus
 
 A gem designed due to my personal online puzzle solving habits; some of them may be a part
