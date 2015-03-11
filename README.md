@@ -1,5 +1,6 @@
 # Rmathplus
 [![Gem Version](https://badge.fury.io/rb/r_math_plus.svg)](http://badge.fury.io/rb/r_math_plus)
+
 A gem designed due to my personal online puzzle solving habits; some of them may be a part
 of Ruby's kernel already, the purpose of the gem is to unite some methods in a single place with easy
 access to them. RMathPlus is a collection of methods that appear kinda often in puzzles, and also some
